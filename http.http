@@ -1,0 +1,21 @@
+GET http://127.0.0.1:3000/api HTTP/1.1
+###
+POST http://127.0.0.1:3000/api/users HTTP/1.1
+content-type: application/json
+
+{
+    "first_name":"Harry",
+    "last_name":"Potter"
+}
+###
+POST http://127.0.0.1:3000/api/users HTTP/1.1
+content-type: application/json
+
+{
+    "first_name":"John",
+    "last_name":"Doe"
+}
+###
+GET http://127.0.0.1:3000/api/users HTTP/1.1
+###
+GET http://127.0.0.1:3000/api/users/1 HTTP/1.1
